@@ -1,0 +1,45 @@
+{
+  "name": "murad-amoled",
+  "displayName": "Murad AMOLED",
+  "description": "A minimal AMOLED black VS Code theme inspired by GitHub Dark with vivid syntax colors.",
+  "version": "1.0.0",
+  "publisher": "mozaddedalfeshani",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "amoled",
+    "black",
+    "github",
+    "minimal",
+    "color-theme"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozaddedalfeshani/murad-amoled"
+  },
+  "bugs": {
+    "url": "https://github.com/mozaddedalfeshani/murad-amoled/issues"
+  },
+  "homepage": "https://github.com/mozaddedalfeshani/murad-amoled#readme",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Murad AMOLED",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Murad AMOLED-color-theme.json"
+      }
+    ]
+  }
+}
