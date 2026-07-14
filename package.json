@@ -22,12 +22,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozaddedalfeshani/murad-amoled"
+    "url": "https://github.com/AbabilX/nodextheme"
   },
   "bugs": {
-    "url": "https://github.com/mozaddedalfeshani/murad-amoled/issues"
+    "url": "https://github.com/AbabilX/nodextheme/issues"
   },
-  "homepage": "https://github.com/mozaddedalfeshani/murad-amoled#readme",
+  "homepage": "https://github.com/AbabilX/nodextheme#readme",
   "icon": "images/icon.png",
   "galleryBanner": {
     "color": "#000000",

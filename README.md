@@ -24,62 +24,75 @@ Strings:           #a5d6ff
 
 ## Installation
 
+### One command from GitHub → VS Code
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash
+```
+
+VS Code only (explicit):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --vscode
+```
+
+Cursor only / both:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --cursor
+curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --all
+```
+
+> Requires a GitHub **Release** with a `.vsix` asset uploaded (see below).  
+> Also needs the `code` CLI in PATH (VS Code → Command Palette → **Shell Command: Install 'code' command in PATH**).
+
+Then: reload window → **Preferences → Color Theme → Murad AMOLED**
+
 ### Option A — Marketplace
 
 1. Open Extensions (`Cmd/Ctrl+Shift+X`)
 2. Search **Murad AMOLED**
 3. Install → **Preferences → Color Theme → Murad AMOLED**
 
-### Option B — Direct `.vsix` download (fastest local install)
-
-If you already have `murad-amoled.vsix` (or `murad-amoled-1.0.0.vsix`):
+### Option B — Local `.vsix` / clone
 
 ```bash
-# from the repo / download folder
-chmod +x install.sh
-./install.sh
-
-# or point at a downloaded file
-./install.sh ~/Downloads/murad-amoled.vsix
+./install.sh --vscode
+./install.sh --vscode ~/Downloads/murad-amoled.vsix
 ```
-
-The script installs into **VS Code** and/or **Cursor** when those CLIs are on your `PATH`.
 
 #### Manual install (UI)
 
 1. Download the `.vsix`
-2. VS Code / Cursor → **Extensions** → `⋯` → **Install from VSIX…**
-3. Select the file
-4. **Preferences → Color Theme → Murad AMOLED**
-5. Reload window if colors do not appear (`Cmd/Ctrl+Shift+P` → **Developer: Reload Window**)
+2. VS Code → **Extensions** → `⋯` → **Install from VSIX…**
+3. Select the file → **Color Theme → Murad AMOLED**
 
 #### Manual install (CLI)
 
 ```bash
-# VS Code
 code --install-extension murad-amoled.vsix --force
-
-# Cursor
-cursor --install-extension murad-amoled.vsix --force
 ```
 
 ### Option C — Build from source (color tweaking)
 
 ```bash
 pnpm install
-
-# one command: package + install
-pnpm install:vscode    # VS Code
-pnpm install:cursor    # Cursor
+pnpm install:vscode    # package + install into VS Code
+pnpm install:cursor    # package + install into Cursor
 ```
-
-Then reload the window and select **Murad AMOLED**.
 
 ### Option D — Extension Development Host
 
 1. Open this folder in VS Code / Cursor
 2. Press **F5**
 3. In the new window: **Color Theme → Murad AMOLED**
+
+### Publish a GitHub Release (needed for curl install)
+
+```bash
+pnpm package
+# Then on GitHub → Releases → New release → upload murad-amoled.vsix
+```
 
 ## Develop / rebuild after color changes
 
