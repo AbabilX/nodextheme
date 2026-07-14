@@ -8,4 +8,5 @@ node_modules/**
 .git/**
 colors.json
 install.sh
+install.ps1
 pnpm-lock.yaml

@@ -24,29 +24,36 @@ Strings:           #a5d6ff
 
 ## Installation
 
+Cross-platform: **macOS · Linux · WSL · Windows**
+
 ### One command from GitHub → VS Code
+
+**macOS / Linux / WSL / Git Bash**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash
 ```
 
-VS Code only (explicit):
+**Windows (PowerShell)**
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --vscode
+```powershell
+irm https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.ps1 | iex
 ```
 
-Cursor only / both:
+| Goal | macOS / Linux / WSL | Windows PowerShell |
+|------|---------------------|--------------------|
+| VS Code (default) | `curl ... \| bash` | `irm ... \| iex` |
+| VS Code only | `curl ... \| bash -s -- --vscode` | `irm .../install.ps1 -OutFile install.ps1; .\install.ps1 -Target vscode` |
+| Cursor | `curl ... \| bash -s -- --cursor` | download `install.ps1` then `.\install.ps1 -Target cursor` |
+| Both | `curl ... \| bash -s -- --all` | `.\install.ps1 -Target all` |
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --cursor
-curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --all
-```
+> Needs a GitHub **Release** with a `.vsix` asset.  
+> Needs `code` (or `cursor`) on PATH:
+> - **macOS:** `Cmd+Shift+P` → *Shell Command: Install 'code' command in PATH*
+> - **Windows:** `Ctrl+Shift+P` → *Shell Command: Install 'code' command in PATH*
+> - **Linux:** install the `code` CLI from your distro / VS Code docs
 
-> Requires a GitHub **Release** with a `.vsix` asset uploaded (see below).  
-> Also needs the `code` CLI in PATH (VS Code → Command Palette → **Shell Command: Install 'code' command in PATH**).
-
-Then: reload window → **Preferences → Color Theme → Murad AMOLED**
+Then reload → **Preferences → Color Theme → Murad AMOLED**
 
 ### Option A — Marketplace
 
@@ -57,8 +64,15 @@ Then: reload window → **Preferences → Color Theme → Murad AMOLED**
 ### Option B — Local `.vsix` / clone
 
 ```bash
+# macOS / Linux / WSL / Git Bash
 ./install.sh --vscode
-./install.sh --vscode ~/Downloads/murad-amoled.vsix
+./install.sh --vscode ./murad-amoled.vsix
+```
+
+```powershell
+# Windows PowerShell
+.\install.ps1 -Target vscode
+.\install.ps1 -Target vscode -VsixPath .\murad-amoled.vsix
 ```
 
 #### Manual install (UI)
@@ -87,11 +101,11 @@ pnpm install:cursor    # package + install into Cursor
 2. Press **F5**
 3. In the new window: **Color Theme → Murad AMOLED**
 
-### Publish a GitHub Release (needed for curl install)
+### Publish a GitHub Release (needed for remote install)
 
 ```bash
 pnpm package
-# Then on GitHub → Releases → New release → upload murad-amoled.vsix
+# GitHub → Releases → New release → upload murad-amoled.vsix
 ```
 
 ## Develop / rebuild after color changes
