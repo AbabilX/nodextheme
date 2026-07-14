@@ -1,93 +1,127 @@
 # Murad AMOLED
 
-A minimal **AMOLED black** Visual Studio Code theme inspired by GitHub Dark, with vivid syntax colors on a pure black canvas.
+[![Version](https://img.shields.io/visual-studio-marketplace/v/mozaddedalfeshani.murad-amoled?label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=mozaddedalfeshani.murad-amoled)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-informational)](#installation)
+
+A minimal **AMOLED black** theme for Visual Studio Code & Cursor — pure `#000000` UI with vivid GitHub Dark–inspired syntax colors.
+
+**Publisher:** `mozaddedalfeshani` · **Theme:** `Murad AMOLED` · **Extension ID:** `mozaddedalfeshani.murad-amoled`
+
+---
 
 ## Preview
 
-> True black (`#000000`) UI · GitHub-inspired syntax · AMOLED-friendly contrast
-
 ```text
-Editor background: #000000
-Accent / focus:    #7ee787
-Keywords:          #ff7b72
-Functions:         #b392f0
-Strings:           #a5d6ff
+Editor background:  #000000
+Accent / focus:     #7ee787
+Keywords:           #ff7b72
+Functions:          #b392f0
+Strings:            #a5d6ff
+Comments:           #b392f0
 ```
+
+> True black chrome · OLED-friendly · high-contrast syntax
+
+---
 
 ## Features
 
-- Pure AMOLED black editor and chrome (`#000000`)
+- Pure AMOLED black (`#000000`) editor and workbench
 - Vivid syntax highlighting inspired by GitHub Dark
 - Semantic highlighting enabled
-- Clear contrast for long coding sessions on OLED displays
-- Consistent UI tokens for sidebar, status bar, terminal, and debug views
+- Tuned UI tokens (sidebar, tabs, status bar, terminal, debug)
+- Works on **VS Code** and **Cursor**
+- Cross-platform one-liner install (macOS · Linux · WSL · Windows)
+
+---
 
 ## Installation
 
-Cross-platform: **macOS · Linux · WSL · Windows**
+### 1. Marketplace (recommended)
 
-### One command from GitHub → VS Code
+1. Open **Extensions** (`Cmd/Ctrl+Shift+X`)
+2. Search **Murad AMOLED**
+3. Click **Install**
+4. Activate: `Cmd/Ctrl+K` then `Cmd/Ctrl+T` → **Murad AMOLED**
 
-**macOS / Linux / WSL / Git Bash**
+Direct link: [marketplace.visualstudio.com/items?itemName=mozaddedalfeshani.murad-amoled](https://marketplace.visualstudio.com/items?itemName=mozaddedalfeshani.murad-amoled)
+
+---
+
+### 2. One command from GitHub
+
+Downloads the latest `.vsix` Release and installs into VS Code.
+
+#### macOS / Linux / WSL / Git Bash
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash
 ```
 
-**Windows (PowerShell)**
+#### Windows (PowerShell)
 
 ```powershell
 irm https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.ps1 | iex
 ```
 
-| Goal | macOS / Linux / WSL | Windows PowerShell |
-|------|---------------------|--------------------|
-| VS Code (default) | `curl ... \| bash` | `irm ... \| iex` |
-| VS Code only | `curl ... \| bash -s -- --vscode` | `irm .../install.ps1 -OutFile install.ps1; .\install.ps1 -Target vscode` |
-| Cursor | `curl ... \| bash -s -- --cursor` | download `install.ps1` then `.\install.ps1 -Target cursor` |
-| Both | `curl ... \| bash -s -- --all` | `.\install.ps1 -Target all` |
-
-> Needs a GitHub **Release** with a `.vsix` asset.  
-> Needs `code` (or `cursor`) on PATH:
-> - **macOS:** `Cmd+Shift+P` → *Shell Command: Install 'code' command in PATH*
-> - **Windows:** `Ctrl+Shift+P` → *Shell Command: Install 'code' command in PATH*
-> - **Linux:** install the `code` CLI from your distro / VS Code docs
-
-Then reload → **Preferences → Color Theme → Murad AMOLED**
-
-### Option A — Marketplace
-
-1. Open Extensions (`Cmd/Ctrl+Shift+X`)
-2. Search **Murad AMOLED**
-3. Install → **Preferences → Color Theme → Murad AMOLED**
-
-### Option B — Local `.vsix` / clone
+#### Target Cursor / both editors
 
 ```bash
-# macOS / Linux / WSL / Git Bash
-./install.sh --vscode
+# Cursor only
+curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --cursor
+
+# VS Code + Cursor
+curl -fsSL https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.sh | bash -s -- --all
+```
+
+```powershell
+# Windows — save then run
+irm https://raw.githubusercontent.com/AbabilX/nodextheme/main/install.ps1 -OutFile install.ps1
+.\install.ps1 -Target cursor   # or: -Target all
+```
+
+**Requirements**
+
+- A GitHub [Release](https://github.com/AbabilX/nodextheme/releases) with a `.vsix` asset
+- Editor CLI on PATH:
+  - **macOS:** `Cmd+Shift+P` → *Shell Command: Install 'code' command in PATH*
+  - **Windows:** `Ctrl+Shift+P` → *Shell Command: Install 'code' command in PATH*
+  - **Linux:** follow [VS Code CLI docs](https://code.visualstudio.com/docs/setup/linux)
+
+After install: **Developer: Reload Window** → Color Theme → **Murad AMOLED**
+
+---
+
+### 3. Install a downloaded `.vsix`
+
+#### Quick scripts (from this repo)
+
+```bash
 ./install.sh --vscode ./murad-amoled.vsix
 ```
 
 ```powershell
-# Windows PowerShell
-.\install.ps1 -Target vscode
 .\install.ps1 -Target vscode -VsixPath .\murad-amoled.vsix
 ```
 
-#### Manual install (UI)
+#### UI
 
-1. Download the `.vsix`
-2. VS Code → **Extensions** → `⋯` → **Install from VSIX…**
-3. Select the file → **Color Theme → Murad AMOLED**
+1. **Extensions** → `⋯` → **Install from VSIX…**
+2. Select `murad-amoled.vsix`
+3. Color Theme → **Murad AMOLED**
 
-#### Manual install (CLI)
+#### CLI
 
 ```bash
 code --install-extension murad-amoled.vsix --force
+# Cursor:
+cursor --install-extension murad-amoled.vsix --force
 ```
 
-### Option C — Build from source (color tweaking)
+---
+
+### 4. Build from source
 
 ```bash
 pnpm install
@@ -95,44 +129,79 @@ pnpm install:vscode    # package + install into VS Code
 pnpm install:cursor    # package + install into Cursor
 ```
 
-### Option D — Extension Development Host
+Or press **F5** to launch the Extension Development Host and pick **Murad AMOLED**.
 
-1. Open this folder in VS Code / Cursor
-2. Press **F5**
-3. In the new window: **Color Theme → Murad AMOLED**
+---
 
-### Publish a GitHub Release (needed for remote install)
+## Activate the theme
 
-```bash
-pnpm package
-# GitHub → Releases → New release → upload murad-amoled.vsix
-```
+| Action | Shortcut |
+|--------|----------|
+| Color Theme picker | `Cmd/Ctrl+K` then `Cmd/Ctrl+T` |
+| Command Palette | `Cmd/Ctrl+Shift+P` → `Preferences: Color Theme` |
+| Reload window | `Cmd/Ctrl+Shift+P` → `Developer: Reload Window` |
 
-## Develop / rebuild after color changes
+---
 
-Edit `themes/Murad AMOLED-color-theme.json`, then:
+## Develop / tweak colors
+
+1. Edit `themes/Murad AMOLED-color-theme.json`
+2. Rebuild & reinstall:
 
 ```bash
 pnpm install:vscode
-# or
-pnpm install:cursor
 ```
 
-Reload the window to preview.
+3. Reload the window to preview
+
+### Useful scripts
+
+| Script | What it does |
+|--------|----------------|
+| `pnpm package` | Build `murad-amoled.vsix` |
+| `pnpm install:vscode` | Build + install into VS Code |
+| `pnpm install:cursor` | Build + install into Cursor |
+| `pnpm publish` | Publish to VS Marketplace |
+
+### Ship a GitHub Release (for curl / irm install)
+
+```bash
+pnpm package
+# GitHub → Releases → New release → upload murad-amoled.vsix (+ install.sh already on main)
+```
+
+---
 
 ## Screenshots
 
-<!-- Add screenshots after packaging -->
-
 | Editor | Sidebar | Terminal |
 |--------|---------|----------|
-| _TODO_ | _TODO_  | _TODO_   |
+| _Add screenshot_ | _Add screenshot_ | _Add screenshot_ |
+
+---
+
+## Project layout
+
+```text
+├── package.json
+├── themes/Murad AMOLED-color-theme.json
+├── images/icon.png
+├── install.sh          # macOS / Linux / WSL / Git Bash
+├── install.ps1         # Windows PowerShell
+├── README.md
+├── CHANGELOG.md
+└── LICENSE
+```
+
+---
 
 ## Credits
 
-- Visual direction inspired by **GitHub Dark** and AMOLED black themes.
-- Theme colors and token scopes preserved from the original Muradian AMOLED palette.
+- Inspired by **GitHub Dark** and AMOLED black themes
+- Color & token palette from the original Muradian AMOLED theme
+
+---
 
 ## License
 
-MIT © mozaddedalfeshani
+[MIT](./LICENSE) © [mozaddedalfeshani](https://github.com/AbabilX/nodextheme)

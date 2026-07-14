@@ -15,4 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Semantic highlighting enabled
 - Marketplace metadata (icon, gallery banner, keywords)
 
-[1.0.0]: https://github.com/mozaddedalfeshani/murad-amoled/releases/tag/v1.0.0
+[1.0.0]: https://github.com/AbabilX/nodextheme/releases/tag/v1.0.0
