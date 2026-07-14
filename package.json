@@ -41,5 +41,13 @@
         "path": "./themes/Murad AMOLED-color-theme.json"
       }
     ]
-  }
+  },
+  "scripts": {
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.0"
+  },
+  "packageManager": "pnpm@9.15.0"
 }
