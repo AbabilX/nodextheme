@@ -6,3 +6,6 @@ node_modules/**
 .DS_Store
 *.vsix
 .git/**
+colors.json
+install.sh
+pnpm-lock.yaml
