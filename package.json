@@ -30,20 +30,15 @@
   "homepage": "https://github.com/AbabilX/nodextheme#readme",
   "icon": "images/icon.png",
   "galleryBanner": {
-    "color": "#000000",
+    "color": "#071A15",
     "theme": "dark"
   },
   "contributes": {
     "themes": [
       {
-        "label": "Murad AMOLED",
+        "label": "Murad Andhokar",
         "uiTheme": "vs-dark",
-        "path": "./themes/Murad AMOLED-color-theme.json"
-      },
-      {
-        "label": "Murad Amoled Jade",
-        "uiTheme": "vs-dark",
-        "path": "./themes/amoled-jade-color-theme.json"
+        "path": "./themes/murad-andhokar-color-theme.json"
       },
       {
         "label": "Murad Amoled Yellow Era",
