@@ -39,6 +39,21 @@
         "label": "Murad AMOLED",
         "uiTheme": "vs-dark",
         "path": "./themes/Murad AMOLED-color-theme.json"
+      },
+      {
+        "label": "Murad Amoled Jade",
+        "uiTheme": "vs-dark",
+        "path": "./themes/amoled-jade-color-theme.json"
+      },
+      {
+        "label": "Murad Amoled Yellow Era",
+        "uiTheme": "vs-dark",
+        "path": "./themes/amoled-yellow-era-color-theme.json"
+      },
+      {
+        "label": "Murad Alokito",
+        "uiTheme": "vs",
+        "path": "./themes/murad-alokito-color-theme.json"
       }
     ]
   },
