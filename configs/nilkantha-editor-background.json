@@ -11,11 +11,11 @@
       "background-position": "center center",
       "background-repeat": "no-repeat",
       "background-size": "cover",
-      "opacity": 0.2
+      "opacity": 1
     },
     "styles": [],
     "images": [
-      "REPLACE_WITH_PATH_TO/images/nilkantha-bird.png"
+      "/Users/murad/.vscode/extensions/mozaddedalfeshani.murad-amoled-2.0.1/images/nilkantha-bird.png"
     ],
     "interval": 0,
     "random": false

@@ -36,7 +36,7 @@ Comments:           #64748B (italic, Nilkantha) · #6E7681 (other themes)
 
 ## Nilkantha editor background (optional)
 
-Theme JSON cannot ship a wallpaper. Use [`shalldie.background`](https://marketplace.visualstudio.com/items?itemName=shalldie.background) with the bundled bird image at **20%** opacity.
+Theme JSON cannot ship a wallpaper. Use [`shalldie.background`](https://marketplace.visualstudio.com/items?itemName=shalldie.background) with the bundled bird image at **100%** opacity.
 
 1. Install **background** (`shalldie.background`)
 2. Activate **Murad Nilkantha**
@@ -59,7 +59,7 @@ Theme JSON cannot ship a wallpaper. Use [`shalldie.background`](https://marketpl
 ## Features
 
 - Pure AMOLED black (`#000000`) editor and workbench
-- **Murad Nilkantha** optional bird editor wallpaper (`images/nilkantha-bird.png`, 20% opacity via background extension)
+- **Murad Nilkantha** optional bird editor wallpaper (`images/nilkantha-bird.png`, 100% opacity via background extension)
 - Vivid syntax highlighting inspired by GitHub Dark
 - Semantic highlighting enabled
 - Tuned UI tokens (sidebar, tabs, status bar, terminal, debug)
