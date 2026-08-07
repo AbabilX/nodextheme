@@ -27,16 +27,39 @@ Comments:           #64748B (italic, Nilkantha) · #6E7681 (other themes)
 |-------|--------|
 | **Murad Andhokar** | AMOLED + jade |
 | **Murad Amoled Yellow Era** | AMOLED + lemon yellow |
-| **Murad Nilkantha** | AMOLED + cyan / violet (luminous bird) |
+| **Murad Nilkantha** | AMOLED + cyan / violet (luminous bird) · optional editor bg image |
 | **Murad Alokito** | Light mint-white jade |
 
 > True black chrome · OLED-friendly · high-contrast syntax
 
 ---
 
+## Nilkantha editor background (optional)
+
+Theme JSON cannot ship a wallpaper. Use [`shalldie.background`](https://marketplace.visualstudio.com/items?itemName=shalldie.background) with the bundled bird image at **20%** opacity.
+
+1. Install **background** (`shalldie.background`)
+2. Activate **Murad Nilkantha**
+3. Copy settings from [`configs/nilkantha-editor-background.json`](./configs/nilkantha-editor-background.json) into your user `settings.json`
+4. Set `images` to a real path, for example:
+
+```text
+# after local install / F5
+/Users/<you>/Desktop/muradian_theme/images/nilkantha-bird.png
+
+# after VSIX install (version folder may differ)
+~/.cursor/extensions/mozaddedalfeshani.murad-amoled-<version>/images/nilkantha-bird.png
+~/.vscode/extensions/mozaddedalfeshani.murad-amoled-<version>/images/nilkantha-bird.png
+```
+
+`editor.background` is set to transparent only for **Murad Nilkantha** so the bird shows behind the code. Reload the window after changing settings.
+
+---
+
 ## Features
 
 - Pure AMOLED black (`#000000`) editor and workbench
+- **Murad Nilkantha** optional bird editor wallpaper (`images/nilkantha-bird.png`, 20% opacity via background extension)
 - Vivid syntax highlighting inspired by GitHub Dark
 - Semantic highlighting enabled
 - Tuned UI tokens (sidebar, tabs, status bar, terminal, debug)
