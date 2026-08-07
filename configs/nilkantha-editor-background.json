@@ -1,0 +1,23 @@
+{
+  "background.enabled": true,
+  "workbench.colorCustomizations": {
+    "[Murad Nilkantha]": {
+      "editor.background": "#00000000"
+    }
+  },
+  "background.editor": {
+    "useFront": false,
+    "style": {
+      "background-position": "center center",
+      "background-repeat": "no-repeat",
+      "background-size": "cover",
+      "opacity": 0.2
+    },
+    "styles": [],
+    "images": [
+      "REPLACE_WITH_PATH_TO/images/nilkantha-bird.png"
+    ],
+    "interval": 0,
+    "random": false
+  }
+}

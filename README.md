@@ -14,12 +14,21 @@ A minimal **AMOLED black** theme for Visual Studio Code & Cursor — pure `#0000
 
 ```text
 Editor background:  #000000
-Accent / focus:     #7ee787
+Accent / focus:     #40F0FF  (Nilkantha cyan)
 Keywords:           #ff7b72
-Functions:          #b392f0
-Strings:            #a5d6ff
-Comments:           #6E7681 (italic)
+Functions:          #C084FC  (violet)
+Strings:            #A8F5FF
+Comments:           #64748B (italic, Nilkantha) · #6E7681 (other themes)
 ```
+
+### Included themes
+
+| Theme | Style |
+|-------|--------|
+| **Murad Andhokar** | AMOLED + jade |
+| **Murad Amoled Yellow Era** | AMOLED + lemon yellow |
+| **Murad Nilkantha** | AMOLED + cyan / violet (luminous bird) |
+| **Murad Alokito** | Light mint-white jade |
 
 > True black chrome · OLED-friendly · high-contrast syntax
 
@@ -145,7 +154,7 @@ Or press **F5** to launch the Extension Development Host and pick **Murad AMOLED
 
 ## Develop / tweak colors
 
-1. Edit `themes/Murad AMOLED-color-theme.json`
+1. Edit a file under `themes/` (e.g. `murad-nilkantha-color-theme.json`)
 2. Rebuild & reinstall:
 
 ```bash
@@ -184,8 +193,14 @@ pnpm package
 
 ```text
 ├── package.json
-├── themes/Murad AMOLED-color-theme.json
-├── images/icon.png
+├── themes/
+│   ├── murad-andhokar-color-theme.json
+│   ├── amoled-yellow-era-color-theme.json
+│   ├── murad-nilkantha-color-theme.json
+│   └── murad-alokito-color-theme.json
+├── images/
+│   ├── icon.png
+│   └── nilkantha-bird.png
 ├── install.sh          # macOS / Linux / WSL / Git Bash
 ├── install.ps1         # Windows PowerShell
 ├── README.md

@@ -46,6 +46,11 @@
         "path": "./themes/amoled-yellow-era-color-theme.json"
       },
       {
+        "label": "Murad Nilkantha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/murad-nilkantha-color-theme.json"
+      },
+      {
         "label": "Murad Alokito",
         "uiTheme": "vs",
         "path": "./themes/murad-alokito-color-theme.json"

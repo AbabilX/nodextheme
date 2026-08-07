@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- **Murad Nilkantha** — AMOLED black cyan/violet theme inspired by luminous bird palette
+
 ### Changed
 
-- Comments across all themes now use muted grey `#6E7681` with italic style
+- Comments across Andhokar, Yellow Era, and Alokito use muted grey `#6E7681` with italic style
+- Nilkantha comments use dim blue-grey `#64748B` with italic style
 
 ## [2.0.1] - 2026-07-31
 
