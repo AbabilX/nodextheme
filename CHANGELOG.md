@@ -10,12 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Murad Nilkantha** — AMOLED black cyan/violet theme inspired by luminous bird palette
-- Optional Nilkantha editor wallpaper via `shalldie.background` (`images/nilkantha-bird.png`, 100% opacity) — see `configs/nilkantha-editor-background.json`
+- Bundled Nilkantha bird wallpaper (`images/nilkantha-bird.png`) with command **Murad Nilkantha: Enable Bird Background** (binds image path from the installed VSIX; depends on `shalldie.background`)
 
 ### Changed
 
 - Comments across Andhokar, Yellow Era, and Alokito use muted grey `#6E7681` with italic style
 - Nilkantha comments use dim blue-grey `#64748B` with italic style
+- Extension version **2.1.0** — ships `extension.js` so friends can enable the bird bg after installing the VSIX
 
 ## [2.0.1] - 2026-07-31
 

@@ -34,32 +34,25 @@ Comments:           #64748B (italic, Nilkantha) · #6E7681 (other themes)
 
 ---
 
-## Nilkantha editor background (optional)
+## Nilkantha editor background (bundled)
 
-Theme JSON cannot ship a wallpaper. Use [`shalldie.background`](https://marketplace.visualstudio.com/items?itemName=shalldie.background) with the bundled bird image at **100%** opacity.
+The bird image ships inside the VSIX at `images/nilkantha-bird.png`.
 
-1. Install **background** (`shalldie.background`)
-2. Activate **Murad Nilkantha**
-3. Copy settings from [`configs/nilkantha-editor-background.json`](./configs/nilkantha-editor-background.json) into your user `settings.json`
-4. Set `images` to a real path, for example:
+After installing `murad-amoled.vsix` (and `shalldie.background`, pulled in as a dependency):
 
-```text
-# after local install / F5
-/Users/<you>/Desktop/muradian_theme/images/nilkantha-bird.png
+1. Command Palette → **Murad Nilkantha: Enable Bird Background**
+2. Choose **Reload Window** when prompted
 
-# after VSIX install (version folder may differ)
-~/.cursor/extensions/mozaddedalfeshani.murad-amoled-<version>/images/nilkantha-bird.png
-~/.vscode/extensions/mozaddedalfeshani.murad-amoled-<version>/images/nilkantha-bird.png
-```
+That command writes the correct local path for *this* install — so it works when you send the VSIX to a friend (no hardcoded machine paths).
 
-`editor.background` is set to transparent only for **Murad Nilkantha** so the bird shows behind the code. Reload the window after changing settings.
+Opacity defaults to **100%**. Theme: **Murad Nilkantha**.
 
 ---
 
 ## Features
 
 - Pure AMOLED black (`#000000`) editor and workbench
-- **Murad Nilkantha** optional bird editor wallpaper (`images/nilkantha-bird.png`, 100% opacity via background extension)
+- **Murad Nilkantha** bundled bird editor wallpaper (enable via command)
 - Vivid syntax highlighting inspired by GitHub Dark
 - Semantic highlighting enabled
 - Tuned UI tokens (sidebar, tabs, status bar, terminal, debug)
@@ -216,6 +209,7 @@ pnpm package
 
 ```text
 ├── package.json
+├── extension.js        # binds bundled bird image for Nilkantha
 ├── themes/
 │   ├── murad-andhokar-color-theme.json
 │   ├── amoled-yellow-era-color-theme.json
