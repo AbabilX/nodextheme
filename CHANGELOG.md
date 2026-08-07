@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Murad Nilkantha** — AMOLED black cyan/violet theme inspired by luminous bird palette
+- Optional Nilkantha editor wallpaper via `shalldie.background` (`images/nilkantha-bird.png`, 20% opacity) — see `configs/nilkantha-editor-background.json`
 
 ### Changed
 

@@ -201,6 +201,8 @@ pnpm package
 ├── images/
 │   ├── icon.png
 │   └── nilkantha-bird.png
+├── configs/
+│   └── nilkantha-editor-background.json
 ├── install.sh          # macOS / Linux / WSL / Git Bash
 ├── install.ps1         # Windows PowerShell
 ├── README.md
