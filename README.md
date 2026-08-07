@@ -18,7 +18,7 @@ Accent / focus:     #7ee787
 Keywords:           #ff7b72
 Functions:          #b392f0
 Strings:            #a5d6ff
-Comments:           #b392f0
+Comments:           #6E7681 (italic)
 ```
 
 > True black chrome · OLED-friendly · high-contrast syntax
