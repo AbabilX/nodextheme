@@ -27,32 +27,16 @@ Comments:           #64748B (italic, Nilkantha) · #6E7681 (other themes)
 |-------|--------|
 | **Murad Andhokar** | AMOLED + jade |
 | **Murad Amoled Yellow Era** | AMOLED + lemon yellow |
-| **Murad Nilkantha** | AMOLED + cyan / violet (luminous bird) · optional editor bg image |
+| **Murad Nilkantha** | AMOLED + cyan / violet |
 | **Murad Alokito** | Light mint-white jade |
 
 > True black chrome · OLED-friendly · high-contrast syntax
 
 ---
 
-## Nilkantha editor background (bundled)
-
-The bird image ships inside the VSIX at `images/nilkantha-bird.png`.
-
-After installing `murad-amoled.vsix` (and `shalldie.background`, pulled in as a dependency):
-
-1. Command Palette → **Murad Nilkantha: Enable Bird Background**
-2. Choose **Reload Window** when prompted
-
-That command writes the correct local path for *this* install — so it works when you send the VSIX to a friend (no hardcoded machine paths).
-
-Opacity defaults to **100%**. Theme: **Murad Nilkantha**.
-
----
-
 ## Features
 
 - Pure AMOLED black (`#000000`) editor and workbench
-- **Murad Nilkantha** bundled bird editor wallpaper (enable via command)
 - Vivid syntax highlighting inspired by GitHub Dark
 - Semantic highlighting enabled
 - Tuned UI tokens (sidebar, tabs, status bar, terminal, debug)
@@ -209,17 +193,13 @@ pnpm package
 
 ```text
 ├── package.json
-├── extension.js        # binds bundled bird image for Nilkantha
 ├── themes/
 │   ├── murad-andhokar-color-theme.json
 │   ├── amoled-yellow-era-color-theme.json
 │   ├── murad-nilkantha-color-theme.json
 │   └── murad-alokito-color-theme.json
 ├── images/
-│   ├── icon.png
-│   └── nilkantha-bird.png
-├── configs/
-│   └── nilkantha-editor-background.json
+│   └── icon.png
 ├── install.sh          # macOS / Linux / WSL / Git Bash
 ├── install.ps1         # Windows PowerShell
 ├── README.md

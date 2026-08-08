@@ -1,8 +1,8 @@
 {
   "name": "murad-amoled",
   "displayName": "Murad AMOLED",
-  "description": "AMOLED themes including Murad Nilkantha with a bundled bird editor background.",
-  "version": "2.1.0",
+  "description": "A minimal AMOLED black VS Code theme inspired by GitHub Dark with vivid syntax colors.",
+  "version": "2.1.1",
   "publisher": "mozaddedalfeshani",
   "license": "MIT",
   "engines": {
@@ -34,20 +34,7 @@
     "color": "#071A15",
     "theme": "dark"
   },
-  "main": "./extension.js",
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "extensionDependencies": [
-    "shalldie.background"
-  ],
   "contributes": {
-    "commands": [
-      {
-        "command": "muradAmoled.enableNilkanthaBackground",
-        "title": "Murad Nilkantha: Enable Bird Background"
-      }
-    ],
     "themes": [
       {
         "label": "Murad Andhokar",
