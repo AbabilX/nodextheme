@@ -37,6 +37,7 @@ Comments:           #64748B (italic, Nilkantha) · #6E7681 (other themes)
 ## Features
 
 - Pure AMOLED black (`#000000`) editor and workbench
+- On update, clears leftover Nilkantha bird wallpaper settings from older installs
 - Vivid syntax highlighting inspired by GitHub Dark
 - Semantic highlighting enabled
 - Tuned UI tokens (sidebar, tabs, status bar, terminal, debug)
@@ -193,6 +194,7 @@ pnpm package
 
 ```text
 ├── package.json
+├── extension.js        # one-time cleanup of leftover bird bg settings
 ├── themes/
 │   ├── murad-andhokar-color-theme.json
 │   ├── amoled-yellow-era-color-theme.json

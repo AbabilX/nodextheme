@@ -2,7 +2,7 @@
   "name": "murad-amoled",
   "displayName": "Murad AMOLED",
   "description": "A minimal AMOLED black VS Code theme inspired by GitHub Dark with vivid syntax colors.",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "publisher": "mozaddedalfeshani",
   "license": "MIT",
   "engines": {
@@ -34,7 +34,17 @@
     "color": "#071A15",
     "theme": "dark"
   },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "contributes": {
+    "commands": [
+      {
+        "command": "muradAmoled.removeLeftoverBirdBackground",
+        "title": "Murad AMOLED: Remove Leftover Bird Background"
+      }
+    ],
     "themes": [
       {
         "label": "Murad Andhokar",
