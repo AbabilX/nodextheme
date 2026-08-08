@@ -2,7 +2,7 @@
   "name": "murad-amoled",
   "displayName": "Murad AMOLED",
   "description": "A minimal AMOLED black VS Code theme inspired by GitHub Dark with vivid syntax colors.",
-  "version": "2.1.1",
+  "version": "3.0.1",
   "publisher": "mozaddedalfeshani",
   "license": "MIT",
   "engines": {
